@@ -15,7 +15,7 @@ def check_hostname(host_name):
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         try:
-          ssh.connect(host_name, username='a669238',  timeout=5)
+          ssh.connect(host_name, username='username',  timeout=5)
           #print ("Success")
           file_success.write(str(host_name+"\n"))
           file_success.close()
