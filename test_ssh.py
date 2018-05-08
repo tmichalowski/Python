@@ -66,7 +66,7 @@ def performer1():
 
 if __name__ == '__main__':
 
-    print ("This script checks all the hostnames in the input_file with your standard password and write the outputs in below files: \n1.file_output\n2.file_success \n3.file_failed \n4.file_error \n")
+    print ("This script checks all the hostnames in the input_file with your ssh key and write the outputs in below files: \n1.file_output\n2.file_success \n3.file_failed \n4.file_error \n")
 
     f = open('output_file', 'w')
     f.write("-------Output of all hosts-------\n")
