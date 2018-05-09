@@ -84,12 +84,12 @@ if __name__ == '__main__':
     with open("input_file") as f:
         hostname1 = f.read().splitlines()
 
-#Read the standard password from the user
+
     start_time1 = time.time()
 
     for i in hostname1:
         q.put(i)
-    #print ("all the hostname : "+str(list(q.queue)))
+
     for no_of_threads in range(10):
         t = threading.Thread(target=performer1)
         t.daemon=True
